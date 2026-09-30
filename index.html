@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Krasikova</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+
+    .page {
+      display: grid;
+      grid-template-columns: 330px 1fr;
+      gap: 30px;
+    }
+
+    aside {
+      text-align: center;
+    }
+
+    .photo {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .job {
+      color: #999;
+      font-size: 20px;
+    }
+
+
+    .social {
+    }
+
+    .tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+  }
+
+  .tag {
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 2px 5px;
+  }
+
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+
+    @media (max-width: 700px) {
+      .page {
+        grid-template-columns: 1fr;
+      }
+
+      .columns {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mariia Krasikova</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+    </nav>
+
+    <!--
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+    </nav>
+    //-->
+</header>
+
+  <main class="page">
+
+    <aside>
+      <img class="photo" src="photo.jpg" alt="Mariia Krasikova">
+
+      <h1>Mariia Krasikova</h1>
+
+      <div class="job">
+        Researcher in Applied Acoustics
+      </div>
+
+      <p>
+        <div class="social">
+            <a href="https://orcid.org/0000-0002-5950-4807">ORCID</a>
+            |
+            <a href="https://scholar.google.com/citations?user=cEKuCGMAAAAJ">Google Scholar</a>
+            |
+            <a href="https://www.researchgate.net/profile/Mariia-Krasikova">ResearchGate</a>
+        </div>
+
+        <div class="social">
+            <a href="mailto:mariia.krasikova@gmail.com">mariia.krasikova@gmail.com</a>
+        </div>
+      </p>
+
+    </aside>
+
+    <section>
+      <h2>About me</h2>
+
+      <p>
+        I am a researcher interested in the development of fundamental concepts for practical applications in engineering and medical acoustics, with a reach experience in numerical simulations and experimental acoustics. My expertise includes acoustic measurements, wave propagation, noise control, acoustic metamaterials, and signal analysis. I have designed experimental setups, led research projects and scientific teams, and supervised students.
+      </p>
+
+      <p>
+        I am currently open to postdoctoral research opportunities.
+      </p>
+
+
+      <h2>Research Interests</h2>
+        <div class="tags">
+          <span class="tag">Acoustic Metamaterials</span>
+          <span class="tag">Noise Insulation</span>
+          <span class="tag">Resonant Systems</span>
+          <br>
+        </div>
+        <div class="tags">
+          <span class="tag">Acoustic Power Transfer</span>
+          <span class="tag">Medical Acoustics</span>
+          <span class="tag">Engineering Acoustics</span>
+          <span class="tag">Acoustics</span>
+        </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Mariia Krasikova</p>
+</footer>
+
+</body>
+</html>
