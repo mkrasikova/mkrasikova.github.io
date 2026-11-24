@@ -1,0 +1,512 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Arial, sans-serif;
+
+    line-height: 1.7;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #793497;
+    margin-bottom: -5px;
+}
+
+h2 {
+    color: #793497;
+    margin-top: 0px;
+    margin-bottom: -2px;
+}
+
+ul {
+    margin-top: 0px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin-right: 20px;
+    color: #1d3557;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #1769aa;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+    padding-top: 20px;
+    color: #777;
+}
+
+p {
+    text-align: justify;
+}
+
+
+
+
+
+/** {
+  box-sizing: border-box;
+}*/
+
+
+
+/* Main page container */
+
+
+/* Section heading */
+
+/*.section-title {
+  font-size: 25px;
+  margin: 0 0 12px;
+}
+
+.section-description {
+  max-width: 850px;
+  color: #68778b;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}*/
+
+
+/* Map and information panel */
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  border: 1px solid #e5e9ef;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+/* Map container */
+
+.map-container {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Loading indicator */
+
+#loading {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  padding: 10px 15px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px #0002;
+}
+
+
+/* Right information panel */
+
+#info-panel {
+  width: 340px;
+  min-width: 300px;
+  background: white;
+/*   border-left: 1px solid #e5e9ef; */
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#empty-state {
+  margin-top: 30px;
+  color: #68778b;
+  line-height: 1.6;
+}
+
+#empty-state h2 {
+  color: #253247;
+}
+
+#university-name {
+  font-size: 21px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+.location {
+  color: #68778b;
+  font-size: 14px;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+  padding: 18px;
+  background: #f0f5fb;
+  border-radius: 8px;
+}
+
+#publication-count {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2878c8;
+}
+
+.statistics span:last-child {
+  font-size: 13px;
+  color: #68778b;
+}
+
+
+/* Publication list */
+
+#info-panel h3 {
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+#publication-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#publication-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e9ef;
+  line-height: 1.5;
+}
+
+#publication-list a {
+  color: #1769aa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#publication-list a:hover {
+  text-decoration: underline;
+}
+
+.publication-meta {
+  display: block;
+  color: #8793a3;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+
+
+/* Mobile layout */
+
+@media (max-width: 750px) {
+
+  .page-container {
+    width: calc(100% - 30px);
+    margin: 20px auto 40px;
+  }
+
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .map-container {
+    height: 450px;
+    flex: none;
+  }
+
+  #info-panel {
+    width: 100%;
+    min-width: 0;
+    border-left: none;
+    border-top: 1px solid #e5e9ef;
+    min-height: 280px;
+  }
+
+}
+
+
+.publication-authors {
+  display: block;
+  color: #526175;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+.publication-meta {
+  display: block;
+  color: #8793a3;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+
+
+
+/* ==========================================
+   Publications section
+========================================== */
+
+.publications-section {
+  margin-top: 55px;
+  max-width: 1000px;
+}
+
+.publications-section h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.publications-intro {
+  color: #68778b;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+
+/* Publication counter */
+
+.publication-summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #68778b;
+}
+
+#total-publications {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2878c8;
+}
+
+
+/* Search box */
+
+.publication-search {
+  margin-bottom: 25px;
+}
+
+#publication-search {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 15px;
+  border: 1px solid #dce2ea;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#publication-search:focus {
+  outline: none;
+  border-color: #2878c8;
+}
+
+
+/* Individual publication */
+
+.publication-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e9ef;
+}
+
+.publication-item h3 {
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.publication-item h3 a {
+  color: #1769aa;
+  text-decoration: none;
+}
+
+.publication-item h3 a:hover {
+  text-decoration: underline;
+}
+
+
+/* Authors */
+
+.publication-authors {
+  font-size: 13px;
+  color: #526175;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+
+/* Journal metadata */
+
+.publication-item .publication-meta {
+  font-size: 13px;
+  color: #68778b;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+
+/* Collaborating universities */
+
+.publication-universities {
+  font-size: 12px;
+  color: #68778b;
+  margin: 8px 0;
+}
+
+
+/* DOI */
+
+.publication-doi {
+  font-size: 12px;
+  color: #2878c8;
+  margin: 5px 0;
+}
+
+
+
+/* ==========================================
+   Publication filters
+========================================== */
+
+.publication-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 15px;
+  margin: 25px 0 15px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.filter-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #526175;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #dce2ea;
+  border-radius: 6px;
+  background: white;
+  color: #253247;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #2878c8;
+}
+
+
+/* Reset button */
+
+#reset-publication-filters {
+  padding: 11px 16px;
+  border: 1px solid #dce2ea;
+  border-radius: 6px;
+  background: #f7f9fc;
+  color: #526175;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#reset-publication-filters:hover {
+  background: #eaf1f8;
+  border-color: #2878c8;
+}
+
+
+/* Results information */
+
+#publication-results-info {
+  color: #8793a3;
+  font-size: 13px;
+  margin: 18px 0;
+}
+
+
+/* No results */
+
+.no-publications {
+  padding: 25px;
+  text-align: center;
+  color: #8793a3;
+  background: #f7f9fc;
+  border-radius: 8px;
+}
+
+
+/* Search box */
+
+.publication-search {
+  margin-bottom: 15px;
+}
+
+#publication-search {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 15px;
+  border: 1px solid #dce2ea;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#publication-search:focus {
+  outline: none;
+  border-color: #2878c8;
+}
+
+
+/* Mobile filters */
+
+@media (max-width: 650px) {
+
+  .publication-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+
+  #reset-publication-filters {
+    width: 100%;
+  }
+
+}

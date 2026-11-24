@@ -1,0 +1,253 @@
+
+{
+  "universities": [
+    {
+      "id": "TUM",
+      "name": "Technical University of Munich",
+      "city": "Munich",
+      "country": "Germany",
+      "lat": 48.1497,
+      "lon": 11.5679
+    },
+    {
+      "id": "UNSW_Canberra",
+      "name": "UNSW Canberra",
+      "city": "Canberra",
+      "country": "Australia",
+      "lat": -35.291030728250796,
+      "lon": 149.1660950971052
+    },
+    {
+      "id": "ITMO",
+      "name": "ITMO University",
+      "city": "Saint Petersburg",
+      "country": "Russia",
+      "lat": 59.927711968049856,
+      "lon": 30.33795067027969
+    },
+    {
+      "id": "MSU",
+      "name": "Moscow State University",
+      "city": "Moscow",
+      "country": "Russia",
+      "lat": 55.70409809759984,
+      "lon": 37.5286374109676
+    },
+    {
+      "id": "NMRC",
+      "name": "National Medical Research Center of Cardiology",
+      "city": "Moscow",
+      "country": "Russia",
+      "lat": 55.75653402952013,
+      "lon": 37.375649099327916
+    },
+    {
+      "id": "HEU_Qingdao",
+      "name": "Qingdao Innovation and Development Center of Harbin Engineering University",
+      "city": "Qingdao",
+      "country": "China",
+      "lat": 35.78861,
+      "lon": 120.02361
+    },
+    {
+      "id": "UTS",
+      "name": "University of Technology Sydney",
+      "city": "Sydney",
+      "country": "Australia",
+      "lat": -33.883475483900604,
+      "lon": 151.20060116771268
+    },
+    {
+      "id": "MIU",
+      "name": "Mohamed I University",
+      "city": "Oujda",
+      "country": "Morocco",
+      "lat": 34.65048225478124,
+      "lon": -1.8988802593182093
+    },
+    {
+      "id": "Inatel",
+      "name": "National Institute of Telecommunications",
+      "city": "Santa Rita do Sapucaí",
+      "country": "Brazil",
+      "lat": -22.25709864930294,
+      "lon": -45.69632791717122
+    },
+    {
+      "id": "HEU",
+      "name": "Harbin Engineering University",
+      "city": "Harbin",
+      "country": "China",
+      "lat": 45.773970364644946,
+      "lon": 126.66437471163329
+    },
+    {
+      "id": "Aalto",
+      "name": "Aalto University",
+      "city": "Espoo",
+      "country": "Finland",
+      "lat": 60.18693875206388,
+      "lon": 24.819626613072128
+    },
+    {
+      "id": "FIU",
+      "name": "Florida International University",
+      "city": "Miami",
+      "country": "USA",
+      "lat": 25.77043033662858,
+      "lon": -80.36817303261158
+    },
+    {
+      "id": "NIISF",
+      "name": "Research Institute of Building Physics of the Russian Academy of Architecture and Construction Sciences",
+      "city": "Moscow",
+      "country": "Russia",
+      "lat": 55.84529554886184,
+      "lon": 37.57258663426104
+    }    ,
+    {
+      "id": "SoundGuard",
+      "name": "Soundproofing European Technologies LLC",
+      "city": "Saint Petersburg",
+      "country": "Russia",
+      "lat": 59.943804260766136,
+      "lon": 30.44241361932597
+    },
+    {
+      "id": "MGSU",
+      "name": "Moscow State University of Civil Engineering",
+      "city": "Moscow",
+      "country": "Russia",
+      "lat": 55.857436861997215,
+      "lon": 37.69148118399076
+    },
+    {
+      "id": "Devolm",
+      "name": "Devolm LLC",
+      "city": "Krasnoyarsk",
+      "country": "Russia",
+      "lat": 56.01460701768099,
+      "lon": 92.88343956680625
+    }
+  ],
+
+  "publications": [
+    {
+      "title": "Applicability of Radiowave Anechoic Chambers for Acoustic Free-Field Measurements on the Example of the Chamber at ITMO University",
+      "year": 2026,
+      "authors": ["Bikmukhametov, F.", "Razrezova, K.", "Smolnitsky, R.", "Shchelokov, Y.", "Kanev, N.", "Krasikova, M."],
+      "journal": "arXiv preprint",
+      "volume": "arXiv:2603.16556",
+      "doi": "10.48550/arXiv.2603.16556",
+      "universities": ["ITMO", "Devolm", "NIISF", "SoundGuard", "MGSU"]
+    },
+    {
+      "title": "General Method for Evaluation of Stop-Bands of Periodic Structures with Symmetric Unit Cells",
+      "year": 2026,
+      "authors": ["Hvatov, A.", "Krasikova, M.", "Pavliuk, A.", "Marburg, S"],
+      "journal": "arXiv preprint",
+      "volume": "arXiv:2606.17265",
+      "doi": "10.48550/arXiv.2606.17265",
+      "universities": ["ITMO", "TUM"]
+    },
+    {
+      "title": "Defective phononic crystal based on dual Helmholtz resonators for sensing applications",
+      "year": 2026,
+      "authors": ["El Malki, M.", "Krasikova, M.", "Khettabi, A.", "de Figueiredo, F. A. P."],
+      "journal": "Journal of Low Frequency Noise, Vibration and Active Control",
+      "volume": "45",
+      "issue": "4",
+      "pages": "2218–2234",
+      "doi": "10.1177/14613484261453126",
+      "universities": ["ITMO", "MIU", "Inatel"]
+    },
+    {
+      "title": "Parametric Analysis of Acousto-Mechanical Coupling in C-Shaped Helmholtz Resonators",
+      "year": 2026,
+      "authors": ["Pavliuk, A.", "Krasikova, M.", "Lapine, M."],
+      "journal": "Journal of Theoretical and Computational Acoustics",
+      "volume": "34",
+      "issue": "02",
+      "pages": "2650007",
+      "doi": "10.1142/S2591728526500076",
+      "universities": ["ITMO", "HEU_Qingdao", "UTS"]
+    },
+    {
+      "title": "On the design of finite-size noise insulating metamaterials based on Helmholtz resonators",
+      "year": 2026,
+      "authors": ["Vasiliev, E.", "Krasikova, M."],
+      "journal": "Physica Scripta",
+      "volume": "101",
+      "issue": "5",
+      "pages": "051501",
+      "doi": "10.1088/1402-4896/ae391d",
+      "universities": ["ITMO"]
+    },
+    {
+      "title": "Ventilated noise-insulating metamaterials inspired by sonic black holes",
+      "year": 2025,
+      "authors": ["Bikmukhametov, F.", "Glazko, L.", "Muravev, I.", "Pozdeev, D.", "Vasiliev, E.", "Krasikov, S.", "Krasikova, M."],
+      "journal": "Applied Acoustics",
+      "volume": "238",
+      "pages": "110813",
+      "doi": "10.1016/j.apacoust.2025.110813",
+      "universities": ["ITMO"]
+    },
+    {
+      "title": "Acoustic bound states in the continuum in coupled Helmholtz resonators",
+      "year": 2024,
+      "authors": ["Krasikova, M.", "Kronowetter, F.", "Krasikov, S.", "Kuzmin, M.", "Maeder, M.", "Yang, T.", "Melnikov, A.", "Marburg, S.", "Bogdanov, A."],
+      "journal": "Physical Review Applied",
+      "volume": "22",
+      "issue": "2",
+      "pages": "024045",
+      "doi": "10.1103/PhysRevApplied.22.024045",
+      "universities": ["ITMO", "TUM", "HEU_Qingdao"]
+    },
+    {
+      "title": "Broadband noise-insulating periodic structures made of coupled Helmholtz resonators",
+      "year": 2024,
+      "authors": ["Krasikova, M.", "Pavliuk, A.", "Krasikov, S.", "Kuzmin, M.", "Lutovinov, A.", "Melnikov, A.", "Baloshin, Y.", "Powell, D. A.", "Marburg, S.", "Bogdanov, A."],
+      "journal": "APL Materials",
+      "volume": "12",
+      "issue": "1",
+      "pages": "011115",
+      "doi": "10.1063/5.0175167",
+      "universities": ["ITMO", "TUM", "UNSW_Canberra", "HEU_Qingdao"]
+    },
+    {
+      "title": "Metahouse: Noise-Insulating Chamber Based on Periodic Structures",
+      "year": 2023,
+      "authors": ["Krasikova, M.", "Krasikov, S.", "Melnikov, A.", "Baloshin, Y.", "Marburg, S.", "Powell, D. A.", "Bogdanov, A."],
+      "journal": "Advanced Materials Technologies",
+      "volume": "8",
+      "issue": "1",
+      "pages": "2200711",
+      "doi": "10.1002/admt.202200711",
+      "universities": ["ITMO", "TUM", "UNSW_Canberra"]
+    },
+    {
+      "title": "Wireless power transfer based on novel physical concepts",
+      "year": 2021,
+      "authors": ["Song, M.", "Jayathurathnage, P.", "Zanganeh, E.", "Krasikova, M.", "Smirnov, P.", "Belov, P.", "Kapitanova, P.", "Simovski, C.", "Tretyakov, S.", "Krasnok, A."],
+      "journal": "Nature Electronics",
+      "volume": "4",
+      "issue": "10",
+      "pages": "707–716",
+      "doi": "10.1038/s41928-021-00658-x",
+      "universities": ["ITMO", "HEU", "Aalto", "FIU"]
+    },
+    {
+      "title": "Time–Frequency Analysis of The Second Heart Sound to Assess Pulmonary Artery Pressure",
+      "year": 2020,
+      "authors": ["Andreev, V.", "Gramovich, V.", "Krasikova, M.", "Korolkov, A.", "Vyborov, O.", "Danilov, N.", "Martynyuk, T.", "Rodnenkov, O.", "Rudenko, O."],
+      "journal": "Acoustical Physics",
+      "volume": "66",
+      "issue": "5",
+      "pages": "542-547",
+      "doi": "10.1134/S1063771020050012",
+      "universities": ["ITMO", "NMRC", "MSU"]
+    }
+  ]
+}
+
