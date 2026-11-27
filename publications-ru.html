@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Красикова М.</title>
+
+  <!-- MapLibre CSS -->
+  <link
+    href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css"
+    rel="stylesheet"
+  >
+
+  <!-- Website CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+
+
+    .page {
+      display: grid;
+      grid-template-columns: 630px 1fr;
+      gap: 30px;
+    }
+
+    aside {
+      text-align: center;
+    }
+
+    .photo {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .job {
+      color: #999;
+      font-size: 20px;
+    }
+
+
+    .social {
+    }
+
+    .tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+  }
+
+  .tag {
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 2px 5px;
+  }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <!-- =====================================
+       Header
+  ====================================== -->
+
+  <header>
+    <h1>Мария Красикова</h1>
+    <div class="language-switch">
+        <a href="publications.html">English</a>
+        <span>|</span>
+        <a href="publications-ru.html" class="active_lang">Русский</a>
+    </div>
+    <nav>
+        <a href="index-ru.html">Главная</a>
+        <a href="publications-ru.html">Публикации</a>
+        <a href="cv-ru.html">Резюме</a>
+    </nav>
+
+    </header>
+
+
+  <!-- =====================================
+       Main content
+  ====================================== -->
+
+
+<main class="page-container">
+
+  <h2 class="section-title">
+    Международное сотрудничество
+  </h2>
+
+  <p class="section-description">
+    Моя исследовательская деятельность включает сотрудничество с университетами и научными учреждениями в разных странах. На карте представлены университеты, с которыми у меня есть совместные научные публикации. Размер кругов отражает количество совместных публикаций с каждым из учреждений: чем крупнее круг, тем больше публикаций. Нажмите на круг, чтобы ознакомиться с результатами совместных исследований. Выберите университет, чтобы увидеть соответствующие публикации.
+  </p>
+
+  <!-- Map and university information -->
+  <div class="content">
+
+    <div class="map-container">
+
+      <div id="map"></div>
+
+      <div id="loading">
+        Загрузка публикаций и карты...
+      </div>
+
+    </div>
+
+    <aside id="info-panel">
+
+      <div id="empty-state">
+        <h2>Научное сотрудничество</h2>
+        <p>
+          Выберите университет на карте, чтобы ознакомиться с совместными публикациями.
+        </p>
+      </div>
+
+      <div id="university-details" style="display: none;">
+
+        <h2 id="university-name"></h2>
+
+        <p id="university-location" class="location"></p>
+
+        <div class="statistics">
+          <span id="publication-count">0</span>
+          <span>Совместные публикации</span>
+        </div>
+
+        <hr>
+
+        <h3>Публикации</h3>
+
+        <ul id="publication-list"></ul>
+
+      </div>
+
+    </aside>
+
+  </div>
+
+
+
+
+  <!-- =====================================
+      Scientific Publications
+  ====================================== -->
+
+  <section class="publications-section">
+
+    <h2>Список публикаций</h2>
+
+    <p class="publications-intro">
+      Список научных публикаций и результатов исследований.Используйте фильтры, чтобы просматривать публикации по годам, университетам или журналам.
+    </p>
+
+    <!-- Publication counter -->
+    <div class="publication-summary">
+     <span id="publication-count-label">Количество публикаций: </span>
+      <span id="total-publications">0</span>
+    </div>
+
+    <!-- Search -->
+    <div class="publication-search">
+
+      <input
+        type="text"
+        id="publication-search"
+        placeholder="Поиск по названию, авторам, журналу..."
+      >
+
+    </div>
+
+    <!-- Filters -->
+    <div class="publication-filters">
+
+      <div class="filter-group">
+        <label for="filter-year">Года</label>
+
+        <select id="filter-year">
+          <option value="">Все года</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-university">Университет</label>
+
+        <select id="filter-university">
+          <option value="">Все университеты</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-journal">Журнал</label>
+
+        <select id="filter-journal">
+          <option value="">Все журналы</option>
+        </select>
+      </div>
+
+      <button
+        type="button"
+        id="reset-publication-filters"
+      >
+        Сбросить фильтры
+      </button>
+
+    </div>
+
+    <!-- Results information -->
+    <p id="publication-results-info" aria-live="polite"></p>
+
+    <!-- Generated publication list -->
+    <div id="all-publications">
+
+      <p>Загрузка публикаций...</p>
+
+    </div>
+
+  </section>
+
+
+
+</main>
+
+
+
+  <!-- =====================================
+       JavaScript libraries
+  ====================================== -->
+
+  <!-- MapLibre JavaScript -->
+  <script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
+
+  <!-- Application JavaScript -->
+  <script src="js/map.js"></script>
+
+
+</body>
+
+</html>
